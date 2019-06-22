@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Бойцовский клуб</title>
     <link rel="stylesheet" href="./css/styleForMP.css">
 </head>
 <body class="bodyContainer" style="background-image:url('../img/5286cc0d0cb26.jpg');background-repeat: round repeat">
-    <main class="mainContainer">
+    <main class="mainContainer" style="max-height: 500px">
         <div class="containerHero" style="background-image: url('../img/Оригинал_ 1920x1216.png');background-repeat: round">
                 <div class="progress-bar progressHero">
                         <span class="progress-bar-fill" style="width: 100%"></span>
@@ -15,32 +17,36 @@
                 </div>
         </div>
         <div class="containerFight">
-            <div>
-                <form method="POST" style="background-color: rgba(255,255,255,0.20); padding-bottom: 5px">
-                    <div class="buttleForm" >
-                        <div class="attackBlock" >
-                            <p>Атака</p>
-                            <div class="margins"><input name="attack" type="radio" value="1"><label>удар в голову</label></div>
-                            <div class="margins"><input name="attack" type="radio" value="2"><label>удар в корпус</label></div>
-                            <div class="margins"><input name="attack" type="radio" value="3"><label>удар в пояс</label></div>
-                            <div class="margins"><input name="attack" type="radio" value="4"><label>удар по ногам</label></div>
+            <div class="ghost_block">
+                <button class="findOponent button style_findOponent">Найти соперника</button>
+                <div class="hide">
+                    <form method="POST" style="background-color: rgba(255,255,255,0.20); padding-bottom: 5px">
+                        <div class="buttleForm">
+                            <div class="attackBlock">
+                                <p>Атака</p>
+                                <div class="margins"><label><input name="attack" type="radio" value="1">удар в голову</label></div>
+                                <div class="margins"><label><input name="attack" type="radio" value="2">удар в корпус</label></div>
+                                <div class="margins"><label><input name="attack" type="radio" value="3"><label>удар в пояс</label></div>
+                                <div class="margins"><label><input name="attack" type="radio" value="4">удар по ногам</label></div>
+                            </div>
+                            <div class="protectionBlock">
+                                <p>Защита</p>
+                                <div class="margins"><label><input name="protection" type="radio" value="1">блок головы и корпуса</label></div>
+                                <div class="margins"><label><input name="protection" type="radio" value="2">блок корпуса и пояса</label></div>
+                                <div class="margins"><label><input name="protection" type="radio" value="3">блок пояса и ног</label></div>
+                                <div class="margins"><label><input name="protection" type="radio" value="4">блок головы и ног</label></div>
+                            </div>
                         </div>
-                        <div class="protectionBlock">
-                            <p>Защита</p>
-                            <div class="margins"><input name="protection" type="radio" value="1"><label>блок головы и корпуса</label></div>
-                            <div class="margins"><input name="protection" type="radio" value="2"><label>блок корпуса и пояса</label></div>
-                            <div class="margins"><input name="protection" type="radio" value="3"><label>блок пояса и ног</label></div>
-                            <div class="margins"><input name="protection" type="radio" value="4"><label>блок головы и ног</label></div>
+                        <div class="buttonGo margins"> 
+                            <button class="button buttonGoStyle turnButton" type="submit">Вперед!!</button>
                         </div>
-                    </div>
-                    <div class="buttonGo margins"> 
-                        <button class="button buttonGoStyle turnButton" type="submit">Вперед!!</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <hr noshade size="1">
             <div class="logsBlock" style="display: flex; align-items: center">
                 <img src='../img/vs.png' style="background-repeat:no-repeat;margin: 10% auto 0 auto; max-height: 15vh">
+                <ul class="fight-logs"></ul>
             </div>
         </div>
         <div class="containerEnemy" style="background-image: url('../img/59e75f8f4760e.png'); background-repeat: round;">
@@ -49,7 +55,7 @@
 
                 </div>
                 <div style="display: flex; align-items: center ">
-                    <img src="../img/batman_PNG79.png" style="max-height: 50vh; max-width: 90%;margin: 20px auto 0 auto;">
+                    <img src="../img/batman_PNG79.png" style="max-height: 80vh; max-width: 90%;margin: 0 auto 0 auto;">
                 </div>
         </div>
     </main>
@@ -64,13 +70,11 @@
                 </form>
             </div>
             <div class="onlineContainer" style="background-color: rgba(255,255,255,0.20)">
-                <button class="searchForOnlineUsers button">Обновить</button>
                 <ul class="listOfUsers"></ul>
             </div>
         </footer>
-    <!--В чате при написании более 10 строчек появляеться полоса прокрутки -->
 <script src="/js/onlineUsers.js"></script>
+<script src="./js/fight.js"></script>
 <script src="/js/mainPage.js"></script>
 <script src="./js/chat.js"></script>
 </body>
-

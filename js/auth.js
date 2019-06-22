@@ -14,7 +14,7 @@
     xhr.onload = function() {
         let userToken = JSON.parse(xhr.responseText).user.token;
         localStorage.setItem('token', userToken);
-        document.location.href = 'http://localhost:3333/fight.html';
+        document.location.href = 'http://localhost:3333/mainPage.html';
     };
     
   });
