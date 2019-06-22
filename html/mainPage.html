@@ -4,18 +4,21 @@
     <title>Бойцовский клуб</title>
     <link rel="stylesheet" href="./css/styleForMP.css">
 </head>
-<body class="bodyContainer">
+<body class="bodyContainer" style="background-image:url('../img/5286cc0d0cb26.jpg');background-repeat: round repeat">
     <main class="mainContainer">
-        <div class="containerHero">
+        <div class="containerHero" style="background-image: url('../img/Оригинал_ 1920x1216.png');background-repeat: round">
                 <div class="progress-bar progressHero">
                         <span class="progress-bar-fill" style="width: 100%"></span>
+                </div>
+                <div style="display: flex; align-items: center ">
+                    <img src="../img/ironman_PNG60.png" style="max-height: 50vh; max-width: 90%;margin: 20px auto 0 auto;">
                 </div>
         </div>
         <div class="containerFight">
             <div>
-                <form method="POST">
-                    <div class="buttleForm">
-                        <div class="attackBlock">
+                <form method="POST" style="background-color: rgba(255,255,255,0.20); padding-bottom: 5px">
+                    <div class="buttleForm" >
+                        <div class="attackBlock" >
                             <p>Атака</p>
                             <div class="margins"><input name="attack" type="radio" value="1"><label>удар в голову</label></div>
                             <div class="margins"><input name="attack" type="radio" value="2"><label>удар в корпус</label></div>
@@ -36,19 +39,23 @@
                 </form>
             </div>
             <hr noshade size="1">
-            <div class="logsBlock">
-
+            <div class="logsBlock" style="display: flex; align-items: center">
+                <img src='../img/vs.png' style="background-repeat:no-repeat;margin: 10% auto 0 auto; max-height: 15vh">
             </div>
         </div>
-        <div class="containerEnemy">
+        <div class="containerEnemy" style="background-image: url('../img/59e75f8f4760e.png'); background-repeat: round;">
                 <div class="progress-bar progressEnemy">
                         <span class="progress-bar-fill" style="width: 100%"></span>
+
+                </div>
+                <div style="display: flex; align-items: center ">
+                    <img src="../img/batman_PNG79.png" style="max-height: 50vh; max-width: 90%;margin: 20px auto 0 auto;">
                 </div>
         </div>
     </main>
     <footer class="footerContainer">
             <div class="containerChat">
-                <div class="chatLog">
+                <div class="chatLog" style="background-color: rgba(255,255,255,0.20);margin-top: 5px">
                     <ul class="chatMessages"></ul>
                 </div>
                 <form method="POST" action="/chat" class="chatForm">
@@ -56,11 +63,12 @@
                     <button type="submit" class="chatButton button">Отправить</button>            
                 </form>
             </div>
-            <div class="onlineContainer">
+            <div class="onlineContainer" style="background-color: rgba(255,255,255,0.20)">
                 <button class="searchForOnlineUsers button">Обновить</button>
                 <ul class="listOfUsers"></ul>
             </div>
         </footer>
+    <!--В чате при написании более 10 строчек появляеться полоса прокрутки -->
 <script src="/js/onlineUsers.js"></script>
 <script src="/js/mainPage.js"></script>
 <script src="./js/chat.js"></script>

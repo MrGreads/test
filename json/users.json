@@ -19,5 +19,19 @@
         "username": "anton",
         "password": "123",
         "last_active": 1560153406199
+    },
+    {
+        "id": "lihz9q",
+        "token": "fkkTjaSa7v",
+        "username": "Greeds",
+        "password": "qaz",
+        "last_active": 1561193954126
+    },
+    {
+        "id": "uDs861",
+        "token": "IfFfnT36BQ",
+        "username": "monstromag",
+        "password": "qaz",
+        "last_active": 1560847694443
     }
 ]

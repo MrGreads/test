@@ -50,7 +50,7 @@ table {
 body {
   font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
   color: #404040;
-  background: #0ca3d2;
+  background: #007f3f;
 }
 
 .container {
@@ -63,7 +63,7 @@ body {
   margin: 150px auto 0 auto;
   padding: 20px 20px 20px;
   width: 310px;
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -86,16 +86,16 @@ body {
   font-weight: bold;
   color: #555;
   text-align: center;
-  text-shadow: 0 1px white;
-  background: #f3f3f3;
-  border-bottom: 1px solid #cfcfcf;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.49);
+  background: rgba(255, 255, 255, 0.49);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.49);
   border-radius: 3px 3px 0 0;
-  background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+  background-image: -webkit-linear-gradient(top, whiteffd, rgba(255, 255, 255, 0.49));
   background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
   background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
-  background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
-  -webkit-box-shadow: 0 1px whitesmoke;
-  box-shadow: 0 1px whitesmoke;
+  background-image: linear-gradient(to bottom, whiteffd, rgba(255, 255, 255, 0.49));
+  -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.49);
+  box-shadow: 0 1px rgba(255, 255, 255, 0.49);
 }
 .login p {
   margin: 20px 0 0;
@@ -209,42 +209,42 @@ input[type=submit]:active {
   line-height: 34px;
 }
 
-/* Стили бара vladmaxi, можно удалить */
+/* пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ vladmaxi, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ */
 .vladmaxi-top{
-	line-height: 24px;
-	font-size: 11px;
-	background: #eee;
-	text-transform: uppercase;
-	z-index: 9999;
-	position: fixed;
-	top:0;
-	left:0;
-	width:100%;
-	font-family: calibri;
-	font-size: 13px;
-	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
-	-webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+  line-height: 24px;
+  font-size: 11px;
+  background: #eee;
+  text-transform: uppercase;
+  z-index: 9999;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  font-family: calibri;
+  font-size: 13px;
+  box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+  -webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
 }
 @-webkit-keyframes slideOut{
-	0%{top:-30px; opacity: 0;}
-	100%{top:0px; opacity: 1;}
+  0%{top:-30px; opacity: 0;}
+  100%{top:0px; opacity: 1;}
 }
 
 .vladmaxi-top a{
-	padding: 0px 10px;
-	letter-spacing: 1px;
-	color: #333;
-	text-shadow: 0px 1px 1px #fff;
-	display: block;
-	float: left;
+  padding: 0px 10px;
+  letter-spacing: 1px;
+  color: #333;
+  text-shadow: 0px 1px 1px #fff;
+  display: block;
+  float: left;
 }
 .vladmaxi-top a:hover{
-	background: #fff;
+  background: #fff;
 }
 .vladmaxi-top span.right{
-	float: right;
+  float: right;
 }
 .vladmaxi-top span.right a{
-	float: left;
-	display: block;
+  float: left;
+  display: block;
 }

@@ -517,5 +517,43 @@
             ]
         ],
         "turn_start": 1560153369256
+    },
+    {
+        "id": "sKLkxI",
+        "status": "progress",
+        "players": [
+            {
+                "id": "lihz9q",
+                "token": "dicjAn_3RU",
+                "username": "Greeds",
+                "last_active": 1560610510870,
+                "health": 30
+            },
+            {
+                "id": "uDs861",
+                "token": "IfFfnT36BQ",
+                "username": "monstromag",
+                "last_active": 1560847531441,
+                "health": 30
+            }
+        ],
+        "turns": [
+            [
+                {
+                    "user": {
+                        "id": "uDs861",
+                        "token": "IfFfnT36BQ",
+                        "username": "monstromag",
+                        "last_active": 1560847549688
+                    },
+                    "turn": {
+                        "hit": "2",
+                        "blocks": "1"
+                    }
+                }
+            ]
+        ],
+        "results": [],
+        "turn_start": 1560610510872
     }
 ]
